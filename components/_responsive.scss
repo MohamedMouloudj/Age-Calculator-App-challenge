@@ -1,0 +1,85 @@
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 54%;
+  }
+}
+@media screen and (max-width: 415px) {
+  main {
+    height: 95vh;
+  }
+  .wraper {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 25px 10px;
+  }
+  .wraper__sub {
+    gap: 15px;
+    margin-bottom: 6vh;
+  }
+  .wraper__result span,
+  .wraper__result p {
+    font-family: var(--result-font);
+    font-size: 3.8rem;
+  }
+  .wraper__form {
+    align-items: flex-end;
+    height: 11vh;
+    gap: 1rem;
+    width: 100%;
+    align-self: end;
+  }
+  .wraper__form div {
+    flex: 1;
+  }
+  .wraper div input {
+    width: 80px;
+    font-size: 2rem;
+  }
+  .date--submit {
+    grid-area: 2/1/2/2;
+    width: 60px;
+    height: 60px;
+    top: 3.8vh;
+  }
+  .date--submit svg {
+    width: 28px;
+    height: 26px;
+  }
+  .input span {
+    display: inline-block;
+    color: var(--Light-red);
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
+@media screen and (max-width: 290px) {
+  html {
+    font-size: 40%;
+  }
+  .wraper__sub {
+    width: 100%;
+    row-gap: 0;
+  }
+  .input {
+    width: min-content;
+  }
+  span,
+  label {
+    width: fit-content;
+  }
+  .wraper__form {
+    width: 100%;
+    gap: 5px;
+    height: 13vh;
+  }
+  .wraper div input {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .date--submit {
+    grid-area: 2/1/2/2;
+    width: 40px;
+    height: 40px;
+  }
+}

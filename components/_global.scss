@@ -1,0 +1,54 @@
+html {
+  font-size: 70%;
+  overflow-y: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-Poppins);
+}
+body {
+  background-color: var(--body-background);
+}
+input {
+  border: none;
+  outline: 0;
+}
+button {
+  border: 0;
+}
+::selection {
+  background-color: var(--Purple);
+  color: var(--Off-black);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  width: max-content;
+  justify-content: center;
+}
+
+.wraper {
+  background-color: var(--White);
+  padding: 4rem;
+  border-radius: 2rem 2rem 8rem 2rem;
+  position: relative;
+}
+
+.attribution {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--White);
+  width: fit-content;
+  border-radius: 0 2px 2px 0;
+}
+.attribution a {
+  color: var(--Purple);
+  text-decoration: none;
+}
+.attribution a:visited {
+  color: gray;
+}

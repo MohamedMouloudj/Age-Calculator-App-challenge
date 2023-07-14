@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="wraper">
+        <div class="wraper__sub">
+          <form action="" class="wraper__form">
+            <div class="day input">
+              <label for="day" class="label">DAY</label>
+              <input placeholder="DD" type="text" name="day" id="day" />
+            </div>
+            <div class="month input">
+              <label for="month" class="label">MONTH</label>
+              <input placeholder="MM" type="text" name="month" id="month" />
+            </div>
+            <div class="year input">
+              <label for="year" class="label">YEAR</label>
+              <input placeholder="YYYY" type="text" name="year" id="year" />
+            </div>
+          </form>
+          <button class="date--submit" onclick="showResult(event)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="hsl(259, 100%, 65%)" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="wraper__result"></div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        target="_blank"
+        href="https://www.frontendmentor.io/profile/MohamedMouloudj"
+        >Mohamed Mouloudj</a
+      >.
+    </footer>
+  </body>
+</html>

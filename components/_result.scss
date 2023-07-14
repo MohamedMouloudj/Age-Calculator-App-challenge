@@ -1,0 +1,14 @@
+.wraper__result {
+  display: flex;
+  flex-direction: column;
+}
+
+.wraper__result span,
+.wraper__result p {
+  font-family: var(--result-font);
+  font-size: 64px;
+  display: inline-block;
+}
+.wraper__result span {
+  color: var(--Purple);
+}
