@@ -37,6 +37,7 @@ html {
 
 body {
   background-color: var(--body-background);
+  min-height: 100vh;
 }
 
 input {
@@ -182,7 +183,7 @@ g {
   fill: var(--Off-black);
 }
 
-.date--submit img {
+.date--submit svg {
   width: 2.2rem;
 }
 
@@ -209,7 +210,7 @@ g {
 }
 @media screen and (max-width: 415px) {
   main {
-    height: 95vh;
+    height: 100vh;
   }
   .wraper {
     width: 90vw;
