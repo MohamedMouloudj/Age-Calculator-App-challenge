@@ -156,6 +156,10 @@ function showResult(event) {
         month = 0;
         year += 1;
       }
+      if(day==30){
+        month+=1;
+        day=0;
+      }
       insertElements(year, month, day);
     }
   } else {
