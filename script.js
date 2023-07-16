@@ -124,6 +124,7 @@ function showResult(event) {
   if (correctDate === true) { // calculating age
     colorBack();
     let year;
+    let minusYear =true;
     year = date.getFullYear() - (userYear / 10000);
 
     if (userDate - actuelDate == 0) {
@@ -132,34 +133,56 @@ function showResult(event) {
       let month = (date.getMonth() + 1) - userMonth / 100;
       if (month <= 0) {
         year -= 1;
-
         month = 12 + month;
+      }else{
+        minusYear=false;
       }
       let day = (date.getDate()) - userDay;
 
       const actuelMonth = date.getMonth() + 1;
       const actuelYear = date.getFullYear();
-      if (day < 0) {
+      if (day<0 && minusYear==true) {
         month -= 1;
 
         if (actuelMonth == 1 || actuelMonth == 3 || actuelMonth == 5 || actuelMonth == 7 || actuelMonth == 8 || actuelMonth == 10 || actuelMonth == 12) {
-          day += 31;
+          if(day==-1){
+            day=29;
+          }else{
+            day += 31;
+          }
         } else if (actuelMonth == 4 || actuelMonth == 6 || actuelMonth == 9 || actuelMonth == 11) {
-          day += 30
+          if(day==-1){
+            day=29;
+          }else{
+            day += 30
+          }
         } else if ((actuelYear / 10000) % 100 !== 0 || (actuelYear / 10000) % 400 !== 0) {
-          day += 28;
+          if(day==-1){
+            day=29;
+          }else{
+            day += 28;
+          }
         } else {
-          day += 29;
+          if(day==-1){
+            day=29;
+          }else{
+            day += 29;
+          }
         }
-      }
-      if (month == 12) {
-        month = 0;
-        year += 1;
+      }else{
+        if(day<0){
+          day=-day;
+        }
       }
       if(day==30){
         month+=1;
         day=0;
       }
+      if (month == 12) {
+        month = 0;
+        year += 1;
+      }
+      
       insertElements(year, month, day);
     }
   } else {
