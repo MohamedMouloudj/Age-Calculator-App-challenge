@@ -16,6 +16,11 @@ function showResult(event) {
   if (document.querySelector(".year").querySelector("span")) {
     document.querySelector(".year").querySelector("span").remove()
   }
+  if(String(userYear).length<=7){
+    document.querySelector(".year").innerHTML += createErrorElement("year", false);
+    correctDate = false;
+  }
+  
   if (userYear <= 0 || Number.isInteger(userYear) == false) {
     let empty = false;
     if (userYear === 0) {
