@@ -1,4 +1,4 @@
-# -Age-Calculator-App-challenge
+# Frontend-Mentor Age-Calculator-App-challenge
 
 [Website](https://mohamedmouloudj.github.io/-Age-Calculator-App-challenge/)
 
